@@ -1,0 +1,19 @@
+{
+
+  "server": [
+    {
+      "listen_port": 999,
+      "cert": {
+        "private_key": "cert/serv/server.key",
+        "cert_chain": [
+          "cert/serv/server.crt",
+          "cert/serv/root.crt"
+        ],
+        "cient_certs": [
+          "cert/client/client.crt"
+        ]
+      }
+    }
+  ]
+
+}

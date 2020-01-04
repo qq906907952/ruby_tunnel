@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "server_addr": "127.0.0.1",
+      "server_port": 999,
+      "redir_mode": "remote_local",
+      "listen_port": 1919,
+      "redir_addr":"127.0.0.1",
+      "redir_port":19191,
+      "cert": {
+        "serv_name": "ydx.com",
+        "serv_root_cert": "cert/serv/root.crt",
+        "private_key": "cert/client/client.key",
+        "cert_chain": [
+          "cert/client/client.crt"
+        ]
+      }
+    },
+
+    {
+      "server_addr": "127.0.0.1",
+      "server_port": 999,
+      "redir_mode": "local_remote",
+      "listen_port": 1919,
+      "redir_addr":"127.0.0.1",
+      "redir_port":19191,
+      "cert": {
+        "serv_name": "ydx.com",
+        "serv_root_cert": "cert/serv/root.crt",
+        "private_key": "cert/client/client.key",
+        "cert_chain": [
+          "cert/client/client.crt"
+        ]
+      }
+    }
+  ]
+}
